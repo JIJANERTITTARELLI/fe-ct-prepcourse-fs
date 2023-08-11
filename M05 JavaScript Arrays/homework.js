@@ -201,6 +201,12 @@ function mayorACien(array) {
    // La función recibe un arreglo con enteros entre 0 y 200.
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).
    // Tu código:
+   var mayores = []
+   for (let i=0; i<array.length; i++)
+   if (array[i]>100) {
+      mayores.push(array[i]);
+     }
+     return mayores
 }
 
 /* ----------------------------------------------------------------------------------
@@ -214,7 +220,21 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
-}
+   var resultado = [];
+  
+   for (let i = 1; i <= 10; i++) {
+     num = num +2;
+     resultado.push(num);
+     
+     if (num === i) {
+       return "Se interrumpió la ejecución";
+       break;
+     }
+   }
+   
+   return resultado;
+ }
+
 
 function continueStatement(num) {
    // Iterar en un bucle aumentando en 2 el número recibido hasta un límite de 10 veces.
@@ -223,6 +243,15 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
+var resultado2 = [];
+
+for (let i=0; i<10; i++) {
+if (i !== 5) {
+   num = num + 2;
+   resultado2.push(num);
+  }
+ }
+return resultado2;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
