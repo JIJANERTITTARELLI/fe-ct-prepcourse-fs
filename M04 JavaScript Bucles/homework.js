@@ -197,10 +197,12 @@ function doWhile(num) {
    //num = num+5
    //}
    //return (num)
+   var i = 0
    do {
-      i=i+1
-      num=num+5
-   } while (i>8);
+      i = i + 1;
+      num = num + 5;
+   } while (i<8);
+   return num;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/

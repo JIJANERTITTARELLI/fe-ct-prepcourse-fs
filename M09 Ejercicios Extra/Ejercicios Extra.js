@@ -6,7 +6,18 @@ function deObjetoAarray(objeto) {
    // Estos elementos debe ser cada par clave:valor del objeto recibido.
    // [EJEMPLO]: {D: 1, B: 2, C: 3} ---> [['D', 1], ['B', 2], ['C', 3]].
    // Tu código:
-}
+   var arregloDeArreglos = [];
+
+   for (var clave in objeto) {
+     if (objeto.hasOwnProperty(clave)) {
+       arregloDeArreglos.push([clave, objeto[clave]]);
+     }
+   }
+ 
+   return arregloDeArreglos;
+ }
+ 
+
 
 function numberOfCharacters(string) {
    // La función recibe un string. Debes recorrerlo y retornar un objeto donde cada propiedad es una de las
